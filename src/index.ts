@@ -33,7 +33,7 @@ class Marathon implements Results {
     }
 
     result(): string {
-        return "Marathon: "+this.date.getMinutes+ " min " + this.date.getSeconds+" sec"
+        return "Marathon: "+this.date.getMinutes()+ " min " + this.date.getSeconds()+" s"
     }
 }
 
@@ -55,8 +55,9 @@ class Calvinball implements Results{
 */
 
 let eredmenyek : Results[] = [
- new Football("Asd",3,2,new Date())
- 
+ new Football("Asd",3,2,new Date()),
+ new Marathon("Geci",new Date(2000,10,10,10,6,23))
+
 ];
 
 for (let elem of eredmenyek)
