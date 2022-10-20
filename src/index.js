@@ -51,7 +51,7 @@ class Calvinball implements Results{
 */
 let eredmenyek = [
     new Football("Asd", 3, 2, new Date()),
-    new Marathon("Geci", new Date(2000, 10, 10, 10, 6, 23))
+    new Marathon("Futo", new Date(2000, 10, 10, 10, 6, 23))
 ];
 for (let elem of eredmenyek) {
     console.log(elem.result());
